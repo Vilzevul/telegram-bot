@@ -12,13 +12,13 @@ public class NotificationTask {
     @Id
     @GeneratedValue
     Long id;
-    Long id_chat;
+    Long idchat;
     String message;
     LocalDateTime timesend;
     LocalDate timeedit;
 
     public NotificationTask(Long id_chat, String message, LocalDateTime time_send, LocalDate time_edit) {
-        this.id_chat = id_chat;
+        this.idchat = id_chat;
         this.message = message;
         this.timesend = time_send;
         this.timeedit = time_edit;
@@ -50,11 +50,11 @@ public class NotificationTask {
     }
 
     public Long getId_chat() {
-        return id_chat;
+        return idchat;
     }
 
     public void setId_chat(Long id_chat) {
-        this.id_chat = id_chat;
+        this.idchat = id_chat;
     }
 
     public String getMessage() {
